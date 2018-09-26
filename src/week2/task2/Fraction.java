@@ -45,7 +45,7 @@ public class Fraction {
         Fraction add = new Fraction();
         add.numerator = this.numerator*other.denominator + this.denominator*other.numerator;
         add.denominator = this.denominator*other.denominator;
-        return null;
+        return add;
     }
 
     public Fraction subtract(Fraction other) {
@@ -53,7 +53,7 @@ public class Fraction {
         Fraction subtract = new Fraction();
         subtract.numerator = this.numerator*other.denominator - this.denominator*other.numerator;
         subtract.denominator = this.denominator*other.denominator;
-        return null;
+        return subtract;
     }
 
     public Fraction multiply(Fraction other) {
@@ -61,7 +61,7 @@ public class Fraction {
         Fraction multiply = new Fraction();
         multiply.numerator = this.numerator * other.numerator;
         multiply.denominator = this.denominator * other.denominator;
-        return null;
+        return multiply;
     }
 
     public Fraction divide(Fraction other) {
@@ -69,11 +69,11 @@ public class Fraction {
         Fraction divide = new Fraction();
         divide.numerator = this.numerator / other.numerator;
         divide.denominator = this.denominator / other.denominator;
-        return null;
+        return divide;
     }
     public static void main(String[] arg){
         Fraction a = new Fraction(6,9);
-        Fraction b = new Fraction();
+        Fraction b = new Fraction(2,3);
         System.out.print(a.equals(b));
 
     }
