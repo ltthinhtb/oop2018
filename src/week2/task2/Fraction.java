@@ -4,7 +4,7 @@ public class Fraction {
 
     // TODO: khai báo các thuộc tính
     private
-        int numerator,denominator;
+    int numerator,denominator;
 
     public static int gcd(int a, int b) {
         // TODO: Tính ước chung lớn nhất của 2 số a, b
@@ -28,10 +28,15 @@ public class Fraction {
         this.denominator = 2;
     }
 
+    public boolean equals(Object o) {
+        Fraction a = new Fraction();
+        String s = "ok";
+        int x = (this.numerator*a.denominator - a.numerator*this.denominator );
+        if (x < 0) s = "true";
+        else s = "false";
+        if (s == o) return false;
+        else  return true;
 
-    public boolean equals(Fraction o) {
-        if (this.numerator*o.denominator - o.numerator*this.denominator  < 0) return false;
-        else return true;
     }
 
     public void print() {
