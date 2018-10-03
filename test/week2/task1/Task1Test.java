@@ -12,6 +12,7 @@ public class Task1Test {
         assertEquals(3, Task1.gcd(6, 3));
         assertEquals(1, Task1.gcd(6, 7));
         assertEquals(1, Task1.gcd(6, 1));
+
     }
 
     @Test

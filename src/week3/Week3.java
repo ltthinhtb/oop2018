@@ -37,6 +37,8 @@ public class Week3 {
         System.out.println(max(5,3));
         int arr[] = new int[] {5,3,2,4,1};
         System.out.println(minOfArray(arr));
+        String BMI1 = calculateBMI(55,1.8);
+        System.out.println(BMI1);
         System.out.println(calculateBMI(55,1.7));
     }
 }
